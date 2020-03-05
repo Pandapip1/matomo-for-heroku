@@ -1,1 +1,33 @@
-
+{
+  "name": "Matomo for Heroku",
+  "description": "Install Matomo on Heroku"
+  "website": "https://matomo.org/"
+  "env": {
+    "DB_DATABASE": {
+      "description": "Your MySql Database Name"
+    },
+    "DB_HOST": {
+      "description": "Your MySql Server Host"
+    },
+    "DB_PORT": {
+      "description": "Your MySql Server Port"
+    },
+    "DB_USER": {
+      "description": "Your MySql Username"
+    },
+    "DB_PASSWORD": {
+      "description": "Your MySql Password"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-apt"
+    },
+    {
+      "url": "https://github.com/danstiner/heroku-buildpack-geoip-geolite2"
+    },
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
