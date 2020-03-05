@@ -1,7 +1,7 @@
 {
   "name": "Matomo for Heroku",
-  "description": "Install Matomo on Heroku"
-  "website": "https://matomo.org/"
+  "description": "Install Matomo on Heroku",
+  "website": "https://matomo.org/",
   "env": {
     "DB_DATABASE": {
       "description": "Your MySql Database Name"
